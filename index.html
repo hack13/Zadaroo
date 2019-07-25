@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <title>Zadaroo - Free Metaverse Resources</title>
+    <!-- jQuery -->
+    <script src="includes/jquery.min.js"></script>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $("#home").click(function(event){
+                $('#contentbox').load('home.html')
+            })
+            $("#downloads").click(function(event){
+                $('#contentbox').load('downloads.html')
+            })
+            $("#iars").click(function(event){
+                $('#contentbox').load('iars.html')
+            })
+            $("#oars").click(function(event){
+                $('#contentbox').load('oars.html')
+            })
+            $("#licensing").click(function(event){
+                $('#contentbox').load('licensing.html')
+            })
+        })
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Zadaroo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" id="home" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="downloads" href="#">Downloads</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="iars" href="#">IARs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="oars" href="#">OARs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="licensing" href="#">Licensing</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <main role="main" class="flex-shrink-0">
+        <div class="container">
+            <br/>
+            <div id="contentbox">
+                <p>Your browers doesn't support JavaScript</p>
+            </div>
+            <br />
+            <tt>Hosted by Timothy Francis Rogers (aka hack13)</tt>
+        </div>
+    </main>
+    <script>
+    $('#contentbox').load('home.html');
+    </script>
+</body>
