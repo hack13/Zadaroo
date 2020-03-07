@@ -4,6 +4,8 @@ This repo is established to allow others to
 view the source code of the new static version
 of the site.
 
+[beta.zadaroo.com](https://beta.zadaroo.com) This master branch
+
 # Public Domain Resources
 Most the public domain resources are hosted on
 Backblaze B2 Storage.
