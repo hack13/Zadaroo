@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <head>
     <title>Zadaroo - Free Metaverse Resources</title>
+    <!-- Force HTTPS -->
+    <script>
+        if (location.protocol !== 'https:') {
+            location.replace(`https:${location.href.substring(location.protocol.length)}`);
+        }
+    </script>
     <!-- jQuery -->
     <script src="includes/jquery.min.js"></script>
     <!-- Bootstrap CDN -->
